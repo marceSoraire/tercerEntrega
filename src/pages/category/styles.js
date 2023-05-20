@@ -1,11 +1,11 @@
-import { StyleSheet } from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: '#fff',
+        /**EL StatusBar nos permite dejar dentro de zona segura el contenido */
+        paddingTop: StatusBar.currentHeight,
     },
     title: {
         fontSize: 20,
