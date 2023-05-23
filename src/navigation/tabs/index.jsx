@@ -28,7 +28,7 @@ const TabsNavigator =()=> {
             name='ShopTab' 
             component={ShopNavigator}
             options={{
-                tabBarLabel: 'Shop',
+                tabBarLabel: 'Home',
                 tabBarIcon: ({ focused, color, size }) => (
                     <Ionicons name={focused ? 'home' : 'home-outline' } size={size} color={color} />
                 )
@@ -37,18 +37,18 @@ const TabsNavigator =()=> {
             name='OrdesTab'
             component={OrdersNavigator}
             options={{
-                tabBarLabel: 'Orders',
+                tabBarLabel: 'Partners',
                 tabBarIcon: ({ focused, color, size }) => (
-                    <Ionicons name={focused ? 'file-tray' : 'file-tray-outline' } size={size} color={color} />
+                    <Ionicons name={focused ? 'people-sharp' : 'people-outline' } size={size} color={color} />
                 )
             }}/>
             <BottomTab.Screen 
             name='CartTab' 
             component={CartNavigator}
             options={{
-                tabBarLabel: 'Cart',
+                tabBarLabel: 'Sports',
                 tabBarIcon: ({ focused, color, size }) => (
-                    <Ionicons name={focused ? 'cart' : 'cart-outline' } size={size} color={color} />
+                    <Ionicons name={focused ? 'football' : 'football-outline' } size={size} color={color} />
                 )
             }}/>
         </BottomTab.Navigator>

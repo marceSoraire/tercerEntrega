@@ -11,22 +11,22 @@ export const styles = StyleSheet.create({
     },
     containerTouchable: {
         flex: 1,
-        backgroundColor: COLORS.primary,
-        shadowColor:'#000',
+        backgroundColor: COLORS.lightGray,
+        shadowColor: "#000000",
         shadowOffset: {
-            width: 0,
-            height:1
+        	width: 0,
+        	height: 12,
         },
-        shadowOpacity: 0.22,
-        shadowRadius: 2.22,
-        elevation: 3,
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 24,
         justifyContent: 'center',
         alignItems: 'center',
         padding: 10,        
     },
     name: {
-        fontSize: 14,
-        fontFamily: 'regular',
+        fontSize: 16,
+        fontFamily: 'medium',
         textAlign: 'center',
     },
     price: {
@@ -34,8 +34,8 @@ export const styles = StyleSheet.create({
         fontFamily: 'bold',
         textAlign: 'center',
     },
-    weight: {
-        fontSize: 12,
+    description: {
+        fontSize: 14,
         fontFamily: 'regular',
         textAlign: 'center',
     },

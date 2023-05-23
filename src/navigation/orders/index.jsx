@@ -7,7 +7,7 @@ const Stack = createNativeStackNavigator();
 const OrdersNavigator=()=> {
     return(
         <Stack.Navigator 
-            initialRouteName="Orders"
+            initialRouteName="Teachers"
             screenOptions={{
                 headerStyle: {
                     backgroundColor: COLORS.primary,
@@ -15,7 +15,7 @@ const OrdersNavigator=()=> {
                 headerTintColor: COLORS.text,
                 headerTitleStyle: { fontFamily: 'medium'}
             }}>
-            <Stack.Screen name="Orders" component={Orders} />
+            <Stack.Screen name="Teachers" component={Orders} />
         </Stack.Navigator>
     )
 }

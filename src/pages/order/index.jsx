@@ -7,10 +7,8 @@ import OrderItem from "../../components/order-item";
 const Orders =()=> {
 
     const keyExtractor = (item) => item.id.toString();
-    const onRemove =(id)=> {
-        console.warn(id);
-    }
-    const renderItem = ({ item }) => <OrderItem item={item} onRemove={onRemove}/>
+    
+    const renderItem = ({ item }) => <OrderItem item={item} />
     return (
         <View style={styles.container}>
             <FlatList
